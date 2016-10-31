@@ -1,0 +1,383 @@
+﻿<%@ Register TagPrefix="cc1" Namespace="MyWebPagesStarterKit.Controls" %>
+<%@ Register TagPrefix="RJS" Namespace="RJS.Web.WebControl" Assembly="RJS.Web.WebControl.PopCalendar" %>
+<cc1:TemplatedContent runat="server" SkinID="Top">
+    <ContentTemplate>
+<div id="header">
+<div id="cornerRibbon">
+
+</div>
+	<div id="topnav">
+	<div id="icons-menu">
+	     <ul>
+	          <li><a id="home" class="tooltip" href="http://www.kssrobotics.com/" title="صفحه اصلی"></a></li>
+	           <li><a id="mail" class="tooltip" href="mailto:info@kssrobotics.com" title="پست الکترونیکی"></a></li>
+	           <li><a id="fav" class="tooltip" href="#" title="افزودن به علاقه مندی ها"></a></li>
+	           <li><a id="map" class="tooltip" href="http://www.kssrobotics.com/sitemap.aspx" title="نقشه سایت"></a></li>
+	           <li><a id="search" class="tooltip" href="http://www.kssrobotics.com/search.aspx" title="جستجو در محتوا"></a></li>
+	           <li><a id="tel" class="tooltip" href="#" title="تلفکس : 66084138-021"></a></li>
+	           <li><a id="shopping-card" class="tooltip" href="http://www.kssrobotics.com/shop/" title="فروشگاه الکترونیکی"></a></li>
+	           <li><a id="pin" class="tooltip" href="http://www.kssrobotics.com/map/" title="موقعیت جغرافیایی"></a></li>
+	           <li><a id="conf" class="tooltip" href="http://www.kssrobotics.com/conf/" title="کنفرانس الکترونیکی همکاران"></a></li>
+	           <li><a id="chat" class="tooltip" href="ymsgr:sendim?z_alireza67" title="گفتگوی آنلاین"></a></li>
+	           <li><a id="blog" class="tooltip" href="http://www.kssrobotics.com/blog/" title="تارنوشت"></a></li>
+	     </ul>
+	</div>
+	<div id="leftlinks">
+	<ul>
+	       <li id="smslink">
+	       <a href="http://vas.kssrobotics.com/" target="_blank">SMS : +98 300071948</a>
+	       </li>
+	       <li id="login">
+	       |&nbsp;&nbsp;<cc1:LoginStatus  runat="Server" id="LoginStatus1" />
+	       </li>
+                  <li>
+|&nbsp;&nbsp;<cc1:SearchLink runat="Server" id="SearchLink1" />
+</li>
+	       <li id="eng">
+           |&nbsp;&nbsp;<a href="http://www.kssrobotics.com/en/" target="_blank">English</a>
+	       </li>
+	       
+	</ul>
+	</div>
+	
+	</div><!-- End of topnav div -->
+<div id="leftimg">
+
+</div> <!-- End of leftimg div -->
+<div id="rightimg">
+
+</div> <!-- End of rightimg div -->
+
+</div><!-- End of header div -->
+<div id="slider">
+ <!-- Jssor Slider Begin -->
+    <!-- You can move inline styles (except 'top', 'left', 'width' and 'height') to css file or css block. -->
+    <div id="sliderb_container" style="position: relative; width: 960px; height: 360px;">
+
+        <!-- Loading Screen -->
+        <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;">
+            </div>
+            <div style="position: absolute; display: block; background: url(img/loading.gif) no-repeat center center;
+                top: 0px; left: 0px;width: 100%;height:100%;">
+            </div>
+        </div>
+
+        <!-- Slides Container -->
+        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 960px; height: 360px;
+            overflow: hidden;">
+            <div>
+                <img u=image src="App_Themes/KRSS/img/slider/1.JPG" />
+                <div u="thumb">ربات کارتزین ویژه قراردادن و برداشتن محصول در خط تولید</div>
+            </div>
+            <div>
+                <img u=image src="App_Themes/KRSS/img/slider/2.JPG" />
+                <div u="thumb">خط تولید</div>
+            </div>
+            <div>
+                <img u=image src="App_Themes/KRSS/img/slider/3.JPG" />
+                <div u="thumb">ربات کارتزین ویژه قراردادن و برداشتن محصول در کوره</div>
+            </div>
+        </div>
+
+        <!-- ThumbnailNavigator Skin Begin -->
+        <div u="thumbnavigator" class="sliderb-T" style="position: absolute; bottom: 0px; left: 0px; height:45px; width:960px;">
+            <div style="filter: alpha(opacity=40); opacity:0.4; position: absolute; display: block;
+                background-color: #000000; top: 0px; left: 0px; width: 100%; height: 100%;">
+            </div>
+            <!-- Thumbnail Item Skin Begin -->
+            <div u="slides">
+                <div u="prototype" style="POSITION: absolute; WIDTH: 960px; HEIGHT: 45px; TOP: 0; LEFT: 0;">
+                    <thumbnailtemplate style="font-family:'B Traffic', verdana; font-weight: normal; POSITION: absolute; WIDTH: 100%; HEIGHT: 100%; color:#fff; line-height: 45px; font-size:20px; padding-left: 10px; padding-right: 10px"></thumbnailtemplate>
+                </div>
+            </div>
+            <!-- Thumbnail Item Skin End -->
+        </div>
+        <!-- ThumbnailNavigator Skin End -->
+        
+        <!-- Navigator Skin Begin -->
+        <!-- jssor slider navigator skin 01 -->
+        <style>
+            /*
+            .jssorn01 div           (normal)
+            .jssorn01 div:hover     (normal mouseover)
+            .jssorn01 .av           (active)
+            .jssorn01 .av:hover     (active mouseover)
+            .jssorn01 .dn           (mousedown)
+            */
+            .jssorn01 div, .jssorn01 div:hover, .jssorn01 .av
+            {
+                filter: alpha(opacity=70);
+                opacity: .7;
+                overflow:hidden;
+                cursor: pointer;
+                border: #000 1px solid;
+            }
+            .jssorn01 div { background-color: gray; }
+            .jssorn01 div:hover, .jssorn01 .av:hover { background-color: #d3d3d3; }
+            .jssorn01 .av { background-color: #fff; }
+            .jssorn01 .dn, .jssorn01 .dn:hover { background-color: #555555; }
+        </style>
+        <!-- navigator container -->
+        <div u="navigator" class="jssorn01" style="position: absolute; bottom: 16px; left: 10px;">
+            <!-- navigator item prototype -->
+            <div u="prototype" style="POSITION: absolute; WIDTH: 12px; HEIGHT: 12px;"></div>
+        </div>
+        <!-- Navigator Skin End -->
+        
+        <!-- Direction Navigator Skin Begin -->
+        <style>
+            /* jssor slider direction navigator skin 05 css */
+            /*
+            .jssord05l              (normal)
+            .jssord05r              (normal)
+            .jssord05l:hover        (normal mouseover)
+            .jssord05r:hover        (normal mouseover)
+            .jssord05ldn            (mousedown)
+            .jssord05rdn            (mousedown)
+            */
+            .jssord05l, .jssord05r, .jssord05ldn, .jssord05rdn
+            {
+            	position: absolute;
+            	cursor: pointer;
+            	display: block;
+                background: url(img/d17.png) no-repeat;
+                overflow:hidden;
+            }
+            .jssord05l { background-position: -10px -40px; }
+            .jssord05r { background-position: -70px -40px; }
+            .jssord05l:hover { background-position: -130px -40px; }
+            .jssord05r:hover { background-position: -190px -40px; }
+            .jssord05ldn { background-position: -250px -40px; }
+            .jssord05rdn { background-position: -310px -40px; }
+        </style>
+        <!-- Arrow Left -->
+        <span u="arrowleft" class="jssord05l" style="width: 40px; height: 40px; top: 143px; left: 8px;">
+        </span>
+        <!-- Arrow Right -->
+        <span u="arrowright" class="jssord05r" style="width: 40px; height: 40px; top: 143px; right: 8px">
+        </span>
+        <!-- Direction Navigator Skin End -->
+        <a style="display: none" href="http://www.jssor.com">jQuery Gallery</a>
+        <!-- Trigger -->
+    </div>
+    <!-- Jssor Slider End -->
+
+
+</div>
+<div id="container">
+    <div id="right">
+<div id="navigation">
+                                <asp:Menu ID="Menu1" 
+                                    runat="server" 
+                                    DataSourceID="menuDataSource" 
+                                    DynamicHorizontalOffset="0" 
+                                    DynamicVerticalOffset="1" 
+                                    StaticEnableDefaultPopOutImage="false" 
+                                    DynamicEnableDefaultPopOutImage="false"
+                                    ItemWrap="false"
+                                >
+                                    <StaticMenuItemStyle CssClass="nav" Width="192px" />
+                                    <StaticSelectedStyle CssClass="nav_selected" Width="192px" />
+                                    <DynamicMenuItemStyle CssClass="sublevel" />
+                                    <DynamicSelectedStyle CssClass="sublevel_selected" />
+                                    <DynamicMenuStyle CssClass="sublevel" />
+                                </asp:Menu>
+                                <asp:SiteMapDataSource runat="server" ID="menuDataSource" ShowStartingNode="false" />
+                            </div>
+	                        <cc1:SidebarControl runat="server" ID="SidebarControl1"/>
+</div>
+    <div id="left">
+ <div id="breadcrumbs">
+                                <asp:SiteMapPath runat="server" ID="sitemapPath" ShowToolTips="false">
+                                    <RootNodeTemplate></RootNodeTemplate>
+                                    <CurrentNodeStyle CssClass="currentNode" />
+                                    <NodeStyle CssClass="node" />
+                                    <PathSeparatorStyle CssClass="separator" />
+                                    <PathSeparatorTemplate>&gt;</PathSeparatorTemplate>
+                                </asp:SiteMapPath>
+                            </div>
+                             <div id="contentContainer">
+	</ContentTemplate>
+</cc1:TemplatedContent>
+<cc1:TemplatedContent runat="server" SkinID="Bottom">
+    <ContentTemplate>
+                            </div>
+</div>
+</div>
+<div id="minirobots">
+
+</div>
+<div id="footer">
+      <div id="footerContainer">
+      <div id="systems-ribbons-div">
+      <ul>
+           <li><a id="email" href="http://webmail.kssrobotics.com" target="_blank"></a></li>
+           <li><a id="ftp" href="ftp://ftp.kssrobotics.com" target="_blank"></a></li>
+           <li><a id="edu" href="http://edu.kssrobotics.com" target="_blank"></a></li>
+           <li><a id="erp" href="http://erp.kssrobotics.com" target="_blank"></a></li>
+           <li><a id="vas" href="http://vas.kssrobotics.com" target="_blank"></a></li>
+      </ul>
+      </div>
+      
+      <div id="address-info-div">
+      <p>نشانی : تهران، خیابان آزادی، خیابان حبیب الله، ضلع شمالی دانشگاه صنعتی شریف، خیابان شهید قاسمی، کوچه کلستان بن بست گل، ساختمان شماره سه مرکز رشد فناوری های پیشرفته دانشگاه شریف، شماره دو، طبقه اول، کاوه ربات صنعت شریف / روزهای پنجشنبه تا چهار بعداز ظهر</p>
+      <p>
+      تلفکس : 66084138-021
+      </p>
+      <p>
+      نشانی ایمیل : info[@]kssrobotics.com
+      </p>
+      </div>
+      <div id="social-div">
+      <ul>
+           <li><a id="facebook" href="http://www.facebook.com/" target="_blank"></a></li>
+           <li><a id="twitter" href="http://www.twitter.com/" target="_blank"></a></li>
+           <li><a id="gplus" href="http://plus.google.com/" target="_blank"></a></li>
+           <li><a id="linkedin" href="http://www.linkedin.com/" target="_blank"></a></li>
+           <li><a id="youtube" href="http://www.youtube.com/" target="_blank"></a></li>
+           <li><a id="rss" href="http://www.kssrobotics.com/rss/" target="_blank"></a></li>
+      </ul>
+      </div>
+      <div id="shortcut">
+            <ul>
+                  <li><a href="#">محصولات</a></li>
+                  <li>/</li>
+                  <li><a href="#">خدمات</a></li>
+                  <li>/</li>
+                  <li><a href="#">پروژه ها</a></li>
+                  <li>/</li>
+                  <li><a href="#">مشتریان</a></li>
+                  <li>/</li>
+                  <li><a href="#">راهکارها</a></li>
+                  <li>/</li>
+                  <li><a href="#">مقالات</a></li>
+                  <li>/</li>
+                  <li><a href="#">سوابق شرکت</a></li>
+                  <li>/</li>
+                  <li><a href="#">شرکای تجاری</a></li>
+                  <li>/</li>
+                  <li><a href="#">فرم ها</a></li>
+                  <li>/</li>
+                  <li><a href="#">سفارش محصولات</a></li>
+                  <li>/</li>
+                  <li><a href="#">تماس با ما</a></li>
+                  <li>/</li>
+                  <li><a href="#">درباره ما</a></li>
+                  <li>/</li>
+                  <li><a href="#">سوابق اعضاء</a></li>
+                  <li>/</li>
+                  <li><a href="#">مناقصه ها</a></li>
+                  <li>/</li>
+            </ul>
+      </div>
+      <div id="copyright">
+      <p>کلیه حقوق مادی و معنوی نرم افزار و محتوای این وبسایت محفوظ است .</p>
+<p>طراحی، توسعه و پیاده سازی از <a target="_blank" href="http://www.AliZamani.net/">علیرضا زمانی </a> . </p>
+      </div>
+      </div> <!-- end of footerContainer div -->
+</div>
+    </ContentTemplate>
+</cc1:TemplatedContent>
+
+<cc1:Pager 
+    runat="server" 
+    PageSize="20"
+    FirstImageUrl="_images/icon_to_start.gif" 
+    PreviousImageUrl="_images/icon_back.gif" 
+    NextImageUrl="_images/icon_next.gif" 
+    LastImageUrl="_images/icon_to_end.gif" 
+    Mode="FirstPreviousNextLast" 
+    CssClass="pager"
+/>
+
+<RJS:PopCalendar 
+    runat="server" 
+    MessageAlignment="RightCalendarControl" 
+    RequiredDate="True" 
+    SelectHoliday="True" 
+    SelectWeekend="True" 
+    ShowHolidays="False" 
+    ShowSpecialDay="False" 
+    ShowWeekend="True" 
+    ShowWeekNumber="True" 
+    KeepInside="false"
+/>
+
+<asp:TextBox runat="server" CssClass="textbox"/>
+<asp:TextBox runat="server" CssClass="textbox" Width="100px" SkinID="datepicker"/>
+<asp:TextBox runat="server" CssClass="textbox" SkinID="timepicker" />
+<asp:TextBox runat="server" CssClass="textboxAdmin" SkinID="admin"/>
+<asp:TextBox runat="server" CssClass="textboxBlog" SkinID="blog"/>
+
+<asp:Calendar runat="server" SkinID="blogCalendar"  
+    DayNameFormat="FirstTwoLetters"
+    CellPadding="3"
+    CellSpacing="0"
+    CssClass="calendarStyle"
+    TitleStyle-CssClass="calendarTitle"
+    TitleStyle-BackColor="Transparent"
+    DayHeaderStyle-CssClass="calendarHeader"
+    DayStyle-CssClass="calendarDay"
+    SelectedDayStyle-BackColor="White"
+    SelectedDayStyle-Font-Bold="true"
+    SelectedDayStyle-ForeColor="black" />
+    
+<asp:FileUpload runat="server" CssClass="textbox" />
+
+<asp:GridView runat="server" AllowPaging="false" AllowSorting="false" BorderStyle="none" BorderWidth="0px" Width="100%" GridLines="none"></asp:GridView>
+
+<%-- Buttons --%>
+<asp:Button runat="server" CssClass="button" />
+<asp:LinkButton runat="server" CssClass="btnRight" SkinID="Right"></asp:LinkButton>
+<asp:LinkButton runat="server" CssClass="btnLeft" SkinID="Left"></asp:LinkButton>
+<asp:LinkButton runat="server" CssClass="btnUp" SkinID="Up"></asp:LinkButton>
+<asp:LinkButton runat="server" CssClass="btnDown" SkinID="Down"></asp:LinkButton>
+<asp:LinkButton runat="server" CssClass="btnEdit" SkinID="Edit"></asp:LinkButton>
+<asp:LinkButton runat="server" CssClass="btnDelete" SkinID="Delete"></asp:LinkButton>
+
+<%-- Gallery --%>
+<asp:DataList runat="server" SkinID="gallery" RepeatDirection="Horizontal" RepeatColumns="4">
+    <ItemStyle CssClass="gallerycell" />
+</asp:DataList>
+<asp:DataList runat="server" SkinID="galleryEdit" RepeatDirection="Horizontal" RepeatColumns="4">
+    <ItemStyle CssClass="gallerycell" />
+</asp:DataList>
+
+<%-- BLOG --%>
+<asp:DataList runat="server" SkinID="blog" RepeatDirection="Vertical">
+    <ItemStyle CssClass="blogcell" />
+</asp:DataList>
+<asp:DataList runat="server" SkinID="blogEdit" RepeatDirection="Vertical">
+    <ItemStyle CssClass="blogcell" />
+</asp:DataList>
+<asp:DataList runat="server" SkinID="comments" RepeatDirection="Vertical">
+    <ItemStyle CssClass="commentcell" />
+</asp:DataList>
+
+<cc1:Pager 
+    Width="100%"
+    runat="server" 
+    SkinID="gallery" 
+    PageSize="8"
+    FirstImageUrl="_images/icon_to_start.gif" 
+    PreviousImageUrl="_images/icon_back.gif" 
+    NextImageUrl="_images/icon_next.gif" 
+    LastImageUrl="_images/icon_to_end.gif" 
+    Mode="FirstPreviousNextLast" 
+    CssClass="pager"
+/>
+   
+<cc1:ResizedImage runat="server" SkinID="galleryThumbnail" MaxWidth="101" MaxHeight="101" ImageAlign="Middle"/>
+<cc1:ResizedImage runat="server" SkinID="galleryBigView" MaxWidth="442" MaxHeight="442" ImageAlign="top"/>
+
+<%-- Validators --%>
+<asp:CompareValidator runat="server" CssClass="error" />
+<asp:CustomValidator runat="server" CssClass="error" />
+<asp:RangeValidator runat="server" CssClass="error" />
+<asp:RegularExpressionValidator runat="server" CssClass="error" />
+<asp:RequiredFieldValidator runat="server" CssClass="error" />
+
+<%-- RSS Display Item Template --%>
+<asp:DataList runat="server" CssClass="RssDisplay" SkinID="RssDisplay"/>

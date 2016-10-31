@@ -1,0 +1,67 @@
+﻿/* form elements */
+input.button 
+{
+   color: #FFFFFF;
+   background: #3891C8 url(../_images/but_bg.gif) repeat-x top left;
+   border: solid 1px #045ABE;
+   margin: 2px 0px 2px 0px;
+   border-radius: 5px;
+   padding: 1px;
+    font-family: "B Traffic", Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+input.button:hover
+{
+   color: #FFFFFF;
+   background: #3891C8 url(../_images/but_bg_hover.gif) repeat-x top left;
+   border: solid 1px #045ABE;
+   margin: 2px 0px 2px 0px;
+   border-radius: 5px;
+   padding: 1px;
+    font-family: "B Traffic", Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+
+input.textbox 
+{
+    width: 180px;
+    border: solid 1px #3891C8;
+    margin: 2px 0px 2px 0px;
+    border-radius: 5px;
+}
+
+input.textboxAdmin 
+{
+    width: 167px;
+    border: solid 1px #3891C8;
+    margin: 2px 0px 2px 0px;
+    border-radius: 5px;
+}
+
+textarea 
+{
+    width: 365px;
+    height: 200px;
+    border: solid 1px #3891C8;
+    margin: 2px 0px 2px 0px;
+    border-radius: 5px;
+}
+
+select.sel
+{
+    width: 365px;
+    border: solid 1px #3891C8;
+}
+
+select
+{
+    margin: 2px 0px 2px 0px;
+}
+
+.error
+{
+    color: #FF0000;
+}
+/* end formelements */
