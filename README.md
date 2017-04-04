@@ -1,34 +1,30 @@
-# Iran Map Silverlight Project
-> (Educational)
+# KSS Design
+> Corporate Website UI Design
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
-An open source project for programmers and web designers, especially Microsoft Silverlight-based projects.
-
+KSS Robotics Co (http://sati.sharif.ir/unit-detail.jsp?id=192) is one of iranian knowledge based companies that is active in the design and implementation of industrial robots. In this project I've designed the user interface of their website. It is open source and you can download it:
 
 ## Installation
 
 ```sh
-Minimum requirements:
-1. .NET Platform 
-2. MS Silverlight SDK
-3. MS Visual Studio
+Download files and extract it.
 ```
 
 
 ## Usage example
 
 ```sh
-Iran map in Silverlight projects
+Web Design Inspiration and Learning
 ```
 
 ## Development setup
 
 ```sh
 Minimum requirements:
-1. MS Visual Studio / MonoDevelop
+HTML / CSS / JS Editor
 ```
 
 ## Release History
