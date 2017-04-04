@@ -6,6 +6,7 @@
 [![Downloads Stats][npm-downloads]][npm-url]
 
 KSS Robotics Co (http://sati.sharif.ir/unit-detail.jsp?id=192) is one of iranian knowledge based companies that is active in the design and implementation of industrial robots. In this project I've designed the user interface of their website. It is open source and you can download it:
+![](https://github.com/Zamani2014/KSS-Design/blob/master/docs/Home_final-home-mockup.png)
 
 ## Installation
 
